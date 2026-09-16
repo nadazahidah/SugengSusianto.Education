@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sugeng Susianto — Coach &amp; Konsultan Sekolah</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .hero{ position:relative; background: linear-gradient(170deg, var(--navy-deep) 0%, var(--navy) 60%, var(--navy-2) 100%); color: var(--ivory); overflow:hidden; }
+  .hero-inner{ display:grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items:center; padding: 76px 0 84px; }
+  .kicker{ font-size: .85rem; color: var(--gold-light); font-weight: 600; margin-bottom: 16px; }
+  h1.name{ font-size: clamp(2.2rem, 4.6vw, 3rem); line-height: 1.08; letter-spacing: -0.01em; }
+  .tagline{ font-family: "Fraunces", serif; font-style: italic; font-weight: 400; font-size: 1.15rem; color: var(--gold-light); margin-top: 14px; }
+  .hero-desc{ margin-top: 20px; color: var(--ivory-dim); max-width: 460px; font-size: .98rem; }
+  .mantra{ margin-top: 26px; display:flex; gap: 10px; flex-wrap: wrap; font-size: .86rem; }
+  .mantra span{ border: 1px solid var(--rule-dark); padding: 6px 13px; border-radius: 3px; }
+  .hero-ctas{ margin-top: 32px; display:flex; gap:14px; flex-wrap: wrap; }
+  .hero-photo{ position:relative; }
+  .hero-photo .frame{ border: 1px solid var(--rule-dark); border-radius: 4px; overflow:hidden; background: var(--navy-2); aspect-ratio: 1/1.05; }
+  .hero-photo img{ width:100%; height:100%; object-fit: cover; object-position: center 18%; }
+  .hero-photo .tag{ position:absolute; bottom:-16px; left:-16px; background: var(--rust); color: var(--ivory); font-size:.8rem; font-weight:600; padding: 9px 14px; border-radius: 3px; }
+  @media (max-width: 780px){ .hero-inner{ grid-template-columns: 1fr; padding: 56px 0 60px; } .hero-photo{ max-width: 280px; margin-top:8px; } }
+
+  .quicklinks{ display:grid; grid-template-columns: repeat(4,1fr); border-top: 1px solid var(--rule); }
+  .qlink{ padding: 28px 22px 28px 0; border-right: 1px solid var(--rule); text-decoration:none; color:inherit; display:block; }
+  .qlink:last-child{ border-right:none; }
+  .qlink h3{ font-size: 1rem; color: var(--navy); }
+  .qlink p{ font-size: .86rem; color: #57605e; margin-top:8px; }
+  .qlink .arrow{ display:inline-block; margin-top:14px; font-size:.82rem; color: var(--rust); font-weight:600; }
+  @media (max-width: 860px){ .quicklinks{ grid-template-columns: 1fr 1fr; } .qlink{ border-right:1px solid var(--rule); border-bottom:1px solid var(--rule); padding:24px 20px 24px 0; } }
+  @media (max-width: 520px){ .quicklinks{ grid-template-columns: 1fr; } .qlink{ border-right:none; } }
+
+  .teaser-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+  .teaser-card{ border: 1px solid var(--rule); border-radius: 4px; padding: 26px; }
+  .teaser-card .mark{ font-family:"Fraunces", serif; font-size: 2.4rem; color: var(--rust); line-height: 1; }
+  .teaser-card p.body{ margin-top: 10px; color: #3d4353; font-size: .96rem; font-style: italic; }
+  .teaser-card .who{ margin-top: 14px; font-size: .85rem; color: var(--navy); font-weight: 600; }
+  .info-row{ display:flex; justify-content:space-between; align-items:baseline; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  .info-row:first-child{ border-top: 1px solid var(--rule); }
+  .info-row .date{ font-size: .8rem; color: var(--rust); font-weight: 600; white-space:nowrap; }
+  .info-row h3{ font-size: 1rem; color: var(--navy); }
+  @media (max-width: 780px){ .teaser-grid{ grid-template-columns: 1fr; gap: 32px; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">Sugeng Susianto</a>
+    <div class="navlinks">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="profil.html">Profil &amp; Riwayat</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="testimoni.html">Testimoni</a>
+      <a href="info.html">Info Terkini</a>
+      <a href="kontak.html" class="navcta">Jadwalkan Sesi</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <div class="kicker">Coach &amp; Konsultan Sekolah</div>
+        <h1 class="name">Sugeng Susianto</h1>
+        <p class="tagline">Dari pengalaman menuju pengaruh, dari jabatan menuju legacy.</p>
+        <p class="hero-desc">20+ tahun membangun dan memimpin sekolah — sekarang membantu sekolah dan yayasan lain berbenah, dari kepemimpinan sampai mutu pembelajaran.</p>
+        <div class="mantra"><span>Terus Belajar</span><span>Terus Berkontribusi</span><span>Terus Bermanfaat</span></div>
+        <div class="hero-ctas">
+          <a href="kontak.html" class="btn btn-gold">Jadwalkan Sesi</a>
+          <a href="profil.html" class="btn btn-ghost">Kenali Rekam Jejaknya</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="frame"><img src="assets/foto-pak-sugeng.jpg" alt="Sugeng Susianto"></div>
+        <div class="tag">Bekasi, Jawa Barat</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="quote-strip">
+  <div class="wrap">
+    <blockquote>“Sebaik-baik manusia adalah yang paling bermanfaat bagi manusia lainnya.”</blockquote>
+    <cite>HR. Ahmad</cite>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-label">Mulai dari mana?</div>
+      <h2>Empat hal yang biasa orang cari di sini</h2>
+    </div>
+    <div class="quicklinks">
+      <a class="qlink" href="profil.html">
+        <h3>Riwayat &amp; Pengalaman</h3>
+        <p>Perjalanan karier dari HRD sampai kepala bidang di yayasan.</p>
+        <span class="arrow">Lihat profil</span>
+      </a>
+      <a class="qlink" href="layanan.html">
+        <h3>Layanan Konsultasi</h3>
+        <p>5 program pendampingan untuk sekolah dan yayasan.</p>
+        <span class="arrow">Lihat layanan</span>
+      </a>
+      <a class="qlink" href="galeri.html">
+        <h3>Galeri Kegiatan</h3>
+        <p>Momen dari training, coaching, dan kunjungan sekolah.</p>
+        <span class="arrow">Lihat galeri</span>
+      </a>
+      <a class="qlink" href="testimoni.html">
+        <h3>Kata Mereka</h3>
+        <p>Cerita dari sekolah dan yayasan yang sudah didampingi.</p>
+        <span class="arrow">Lihat testimoni</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--ivory-dim); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);">
+  <div class="wrap">
+    <div class="teaser-grid">
+      <div>
+        <div class="section-label">Testimoni</div>
+        <h2 style="font-size: 1.4rem; color: var(--navy); margin-bottom: 18px;">Kata sekolah yang pernah didampingi</h2>
+        <div class="teaser-card">
+          <div class="mark">”</div>
+          <p class="body">[Contoh testimoni — ganti dengan cerita asli dari sekolah/yayasan yang pernah didampingi]</p>
+          <div class="who">[Nama] — [Jabatan, Sekolah]</div>
+        </div>
+        <a href="testimoni.html" class="btn btn-ghost dark" style="margin-top:18px;">Lihat semua testimoni</a>
+      </div>
+      <div>
+        <div class="section-label">Info Terkini</div>
+        <h2 style="font-size: 1.4rem; color: var(--navy); margin-bottom: 18px;">Kegiatan &amp; kabar terbaru</h2>
+        <div class="info-row">
+          <div><h3>[Judul kegiatan terbaru]</h3></div>
+          <div class="date">[Bulan 2026]</div>
+        </div>
+        <div class="info-row">
+          <div><h3>[Judul kegiatan lainnya]</h3></div>
+          <div class="date">[Bulan 2026]</div>
+        </div>
+        <a href="info.html" class="btn btn-ghost dark" style="margin-top:18px;">Lihat semua info</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="text-align:center;">
+  <div class="wrap">
+    <h2 style="font-size: clamp(1.5rem,3vw,2rem); color: var(--navy); max-width: 520px; margin: 0 auto 18px;">Ada yang mau didiskusikan soal sekolah atau yayasan Anda?</h2>
+    <p style="color:#4a5164; max-width: 460px; margin: 0 auto 28px;">Ceritakan tantangannya, nanti kita cari tahu bareng langkah yang paling pas.</p>
+    <a href="kontak.html" class="btn btn-gold">Jadwalkan Sesi Konsultasi</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="values-row"><span>Saleh</span><span>Beradab</span><span>Berjiwa Pemimpin</span><span>Memberi Manfaat</span></div>
+    <p class="closing">“Bekerjalah kamu, maka Allah, Rasul-Nya, dan orang-orang beriman akan melihat pekerjaanmu.” (QS. At-Taubah: 105) — Ilmu adalah aksi nyata.</p>
+    <div class="foot-links"><a href="profil.html">Profil</a><a href="layanan.html">Layanan</a><a href="galeri.html">Galeri</a><a href="testimoni.html">Testimoni</a><a href="info.html">Info Terkini</a><a href="kontak.html">Kontak</a></div>
+    <p class="copy">© 2026 Sugeng Susianto.</p>
+  </div>
+</footer>
+
+</body>
+</html>
