@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil &amp; Riwayat — Sugeng Susianto</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .about-grid{ display:grid; grid-template-columns: 0.85fr 1.15fr; gap: 60px; align-items:start; }
+  .about-copy p{ color: #3c4152; margin-bottom: 16px; }
+  .credentials{ margin-top: 24px; display:flex; flex-direction:column; gap: 10px; }
+  .credentials div{ display:flex; gap: 10px; font-size: .92rem; color: var(--navy); }
+  .credentials div::before{ content:"—"; color: var(--rust); }
+  .org-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+  .org-grid h3{ font-size: 1rem; color: var(--navy); margin-bottom: 14px; }
+  .org-grid ul{ list-style:none; margin:0; padding:0; }
+  .org-grid li{ font-size: .92rem; color: #45495a; padding: 9px 0; border-top: 1px solid var(--rule); }
+  .wilayah-tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 4px; }
+  .wilayah-tags span{ font-size: .84rem; color: var(--navy); border: 1px solid var(--rule); border-radius: 3px; padding: 5px 11px; }
+  @media (max-width:860px){ .about-grid,.org-grid{ grid-template-columns:1fr; gap:36px; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">Sugeng Susianto</a>
+    <div class="navlinks">
+      <a href="index.html">Beranda</a>
+      <a href="profil.html" class="active">Profil &amp; Riwayat</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="testimoni.html">Testimoni</a>
+      <a href="info.html">Info Terkini</a>
+      <a href="kontak.html" class="navcta">Jadwalkan Sesi</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <div class="section-label">Profil</div>
+    <h1>Dibangun dari nol, berkali-kali</h1>
+    <p>Dari HRD perusahaan multinasional sampai kepala bidang di yayasan dengan 5 unit sekolah — ini perjalanan Pak Sugeng.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>Pak Sugeng mengawali karier di HRD perusahaan multinasional, lalu pindah jalur ke dunia pendidikan. Sejak itu pola yang sama terus berulang: masuk, bangun dari nol, sampai besar. Mendirikan SMA IT hingga terakreditasi A, membangun SMK baru, dan sekarang memegang kurikulum, SDM, keuangan, dan humas di lima unit sekolah sekaligus.</p>
+        <p>Di luar itu, beliau aktif jadi pengurus dan trainer di Jaringan Sekolah Islam Terpadu (JSIT) — mengisi pelatihan di berbagai provinsi. Dan meski sudah puluhan tahun di dunia ini, semangat membangun dari nol belum berhenti: sekarang sedang merintis TKIT bersama istri.</p>
+        <div class="credentials">
+          <div>Kepala Bidang Kurikulum, SDM, Keuangan &amp; Humas — 5 unit sekolah</div>
+          <div>Ketua Tim Diklat JSIT Jawa Barat, 4 tahun</div>
+          <div>Trainer JSIT Kemdikbud, 3 tahun berturut-turut</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="t-item"><div class="t-year">2000–2004</div><div class="t-role">HRD Perusahaan Multinasional</div></div>
+        <div class="t-item"><div class="t-year">2004–2005</div><div class="t-role">Wakil Kepala Sekolah</div></div>
+        <div class="t-item"><div class="t-year">2005–2010</div><div class="t-role">Kepala SDIT</div><div class="t-note">7 tahun menjabat</div></div>
+        <div class="t-item"><div class="t-year">2010–2015</div><div class="t-role">Kepala SMA IT</div><div class="t-note">Dari nol hingga 200 siswa, Akreditasi A</div></div>
+        <div class="t-item"><div class="t-year">2017–2020</div><div class="t-role">Membangun SMK</div><div class="t-note">Dari nol</div></div>
+        <div class="t-item"><div class="t-year">2020–sekarang</div><div class="t-role">Kepala Bidang Kurikulum, SDM, Keuangan &amp; Humas</div><div class="t-note">Yayasan, 5 unit sekolah</div></div>
+        <div class="t-item"><div class="t-year">2023–sekarang</div><div class="t-role">Mengembangkan TKIT</div><div class="t-note">Bersama istri, ±30 siswa</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--ivory-dim); border-top: 1px solid var(--rule);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-label">Organisasi &amp; Trainer</div>
+      <h2>Aktif di jaringan sekolah Islam terpadu</h2>
+    </div>
+    <div class="org-grid">
+      <div>
+        <h3>Peran Organisasi</h3>
+        <ul>
+          <li>Sekretaris JSIT Kab. Bekasi</li>
+          <li>Ketua JSIT Kab. Bekasi, 1 periode</li>
+          <li>Ketua Tim Diklat JSIT Jawa Barat, 4 tahun</li>
+          <li>Sekretaris JSIT Jawa Barat, hingga 2029</li>
+          <li>Trainer JSIT Kemdikbud, 3 tahun berturut-turut</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Wilayah Training</h3>
+        <div class="wilayah-tags">
+          <span>Jawa Barat</span><span>Jawa Tengah</span><span>Jawa Timur</span><span>Sumatera Utara</span><span>Lampung</span><span>Jambi</span><span>Kalimantan</span><span>dan lainnya</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="text-align:center;">
+  <div class="wrap">
+    <a href="kontak.html" class="btn btn-gold">Jadwalkan Sesi Konsultasi</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="values-row"><span>Saleh</span><span>Beradab</span><span>Berjiwa Pemimpin</span><span>Memberi Manfaat</span></div>
+    <p class="closing">“Bekerjalah kamu, maka Allah, Rasul-Nya, dan orang-orang beriman akan melihat pekerjaanmu.” (QS. At-Taubah: 105) — Ilmu adalah aksi nyata.</p>
+    <div class="foot-links"><a href="index.html">Beranda</a><a href="layanan.html">Layanan</a><a href="galeri.html">Galeri</a><a href="testimoni.html">Testimoni</a><a href="info.html">Info Terkini</a><a href="kontak.html">Kontak</a></div>
+    <p class="copy">© 2026 Sugeng Susianto.</p>
+  </div>
+</footer>
+
+</body>
+</html>

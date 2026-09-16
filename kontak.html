@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak &amp; Booking — Sugeng Susianto</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .kontak-body{ background: var(--navy-deep); color: var(--ivory); }
+  .booking-grid{ display:grid; grid-template-columns: 0.85fr 1.15fr; gap: 60px; }
+  .booking-info p{ color: var(--ivory-dim); font-size: .96rem; margin-bottom: 22px; }
+  .contact-line{ font-size: .92rem; color: var(--gold-light); }
+  .contact-line + .contact-line{ margin-top: 8px; }
+  form{ display:flex; flex-direction:column; gap: 16px; }
+  .field{ display:flex; flex-direction:column; gap: 7px; }
+  .field label{ font-size: .84rem; color: var(--ivory-dim); }
+  .field input, .field select, .field textarea{ background: rgba(250,246,236,0.06); border: 1px solid var(--rule-dark); border-radius: 3px; color: var(--ivory); padding: 11px 13px; font-family: "Public Sans", sans-serif; font-size: .95rem; }
+  .field input::placeholder, .field textarea::placeholder{ color: rgba(250,246,236,0.35); }
+  .field select option{ color: #111; }
+  .field input:focus, .field select:focus, .field textarea:focus{ outline: none; border-color: var(--gold-light); }
+  textarea{ resize: vertical; min-height: 88px; }
+  .form-note{ font-size: .8rem; color: rgba(250,246,236,0.5); margin-top: 2px; }
+  button.btn{ align-self:flex-start; }
+  @media (max-width:860px){ .booking-grid{ grid-template-columns:1fr; gap:36px; } }
+</style>
+</head>
+<body class="kontak-body">
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">Sugeng Susianto</a>
+    <div class="navlinks">
+      <a href="index.html">Beranda</a>
+      <a href="profil.html">Profil &amp; Riwayat</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="testimoni.html">Testimoni</a>
+      <a href="info.html">Info Terkini</a>
+      <a href="kontak.html" class="navcta">Jadwalkan Sesi</a>
+    </div>
+  </div>
+</nav>
+
+<section style="padding-top:60px;">
+  <div class="wrap">
+    <div class="section-head" style="max-width:640px;">
+      <div class="section-label" style="color:var(--gold-light);">Booking</div>
+      <h2 style="color:var(--ivory);">Jadwalkan sesi konsultasi</h2>
+      <p style="color:var(--ivory-dim);">Isi form-nya, pesan otomatis kekirim ke WhatsApp Pak Sugeng — tinggal lanjut ngobrol soal jadwal dan kebutuhannya.</p>
+    </div>
+    <div class="booking-grid">
+      <div class="booking-info">
+        <p>Biasanya sesi pertama cuma ngobrol santai dulu — kenalan sama kondisi sekolahnya, baru nentuin layanan yang paling pas.</p>
+        <div class="contact-line">WhatsApp: +62 812-xxxx-xxxx</div>
+        <div class="contact-line">Email: kontak@sugengsusianto.id</div>
+      </div>
+      <form id="bookingForm">
+        <div class="field"><label for="nama">Nama</label><input type="text" id="nama" placeholder="Nama lengkap" required></div>
+        <div class="field"><label for="instansi">Sekolah / Yayasan</label><input type="text" id="instansi" placeholder="Nama sekolah atau yayasan"></div>
+        <div class="field"><label for="wa">No. WhatsApp</label><input type="tel" id="wa" placeholder="08xxxxxxxxxx" required></div>
+        <div class="field">
+          <label for="layanan">Layanan yang dibutuhkan</label>
+          <select id="layanan">
+            <option>School Leadership Transformation</option>
+            <option>School HR Transformation</option>
+            <option>Deep Learning &amp; HOTS School Program</option>
+            <option>School Quality &amp; Curriculum Transformation</option>
+            <option>Membangun Sekolah dari Nol</option>
+            <option>Belum yakin — mau konsultasi dulu</option>
+          </select>
+        </div>
+        <div class="field"><label for="pesan">Pesan singkat</label><textarea id="pesan" placeholder="Ceritakan kebutuhan atau tantangan sekolah Anda saat ini"></textarea></div>
+        <button type="submit" class="btn btn-gold">Kirim ke WhatsApp</button>
+        <div class="form-note">Klik tombol akan membuka WhatsApp dengan pesan yang sudah terisi otomatis.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer style="background: var(--navy-deep); border-top: 1px solid var(--rule-dark);">
+  <div class="wrap">
+    <div class="values-row"><span style="color:var(--ivory); border-color:var(--rule-dark);">Saleh</span><span style="color:var(--ivory); border-color:var(--rule-dark);">Beradab</span><span style="color:var(--ivory); border-color:var(--rule-dark);">Berjiwa Pemimpin</span><span style="color:var(--ivory); border-color:var(--rule-dark);">Memberi Manfaat</span></div>
+    <p class="closing" style="color:var(--ivory-dim);">“Bekerjalah kamu, maka Allah, Rasul-Nya, dan orang-orang beriman akan melihat pekerjaanmu.” (QS. At-Taubah: 105) — Ilmu adalah aksi nyata.</p>
+    <div class="foot-links"><a href="index.html">Beranda</a><a href="profil.html">Profil</a><a href="layanan.html">Layanan</a><a href="galeri.html">Galeri</a><a href="testimoni.html">Testimoni</a><a href="info.html">Info Terkini</a></div>
+    <p class="copy" style="color: rgba(250,246,236,0.5);">© 2026 Sugeng Susianto.</p>
+  </div>
+</footer>
+
+<script>
+  const WA_NUMBER = "628123456789"; // TODO: ganti dengan nomor WhatsApp asli Pak Sugeng (format 62xxxxxxxxxx)
+  document.getElementById('bookingForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const nama = document.getElementById('nama').value.trim();
+    const instansi = document.getElementById('instansi').value.trim();
+    const wa = document.getElementById('wa').value.trim();
+    const layanan = document.getElementById('layanan').value;
+    const pesan = document.getElementById('pesan').value.trim();
+    let text = `Assalamu'alaikum Pak Sugeng, saya ${nama}`;
+    if (instansi) text += ` dari ${instansi}`;
+    text += `. Saya ingin menjadwalkan sesi konsultasi untuk layanan: ${layanan}.`;
+    if (pesan) text += `\n\nCatatan: ${pesan}`;
+    text += `\n\nNo. WhatsApp saya: ${wa}`;
+    const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+  });
+</script>
+
+</body>
+</html>
