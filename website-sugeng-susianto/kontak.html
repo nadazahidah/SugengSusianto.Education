@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kontak &amp; Booking — Sugeng Susianto</title>
+<title>Kontak &amp; Booking — Sugeng Susianto, M.Pd.</title>
 <link rel="stylesheet" href="style.css">
 <style>
   .kontak-body{ background: var(--navy-deep); color: var(--ivory); }
@@ -51,8 +51,8 @@
     <div class="booking-grid">
       <div class="booking-info">
         <p>Biasanya sesi pertama cuma ngobrol santai dulu — kenalan sama kondisi sekolahnya, baru nentuin layanan yang paling pas.</p>
-        <div class="contact-line">WhatsApp: +62 812-xxxx-xxxx</div>
-        <div class="contact-line">Email: kontak@sugengsusianto.id</div>
+        <div class="contact-line">WhatsApp: +62 851-5672-8649</div>
+        <div class="contact-line">Email: admin.sugengsusianto@gmail.com</div>
       </div>
       <form id="bookingForm">
         <div class="field"><label for="nama">Nama</label><input type="text" id="nama" placeholder="Nama lengkap" required></div>
@@ -87,7 +87,7 @@
 </footer>
 
 <script>
-  const WA_NUMBER = "628123456789"; // TODO: ganti dengan nomor WhatsApp asli Pak Sugeng (format 62xxxxxxxxxx)
+  const WA_NUMBER = "6285156728649"; // TODO: ganti dengan nomor WhatsApp asli Pak Sugeng (format 62xxxxxxxxxx)
   document.getElementById('bookingForm').addEventListener('submit', function(e){
     e.preventDefault();
     const nama = document.getElementById('nama').value.trim();
@@ -100,7 +100,7 @@
     text += `. Saya ingin menjadwalkan sesi konsultasi untuk layanan: ${layanan}.`;
     if (pesan) text += `\n\nCatatan: ${pesan}`;
     text += `\n\nNo. WhatsApp saya: ${wa}`;
-    const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+    const url = `https://wa.me/${6285156728649}?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
   });
 </script>
